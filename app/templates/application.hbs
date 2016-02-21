@@ -1,3 +1,15 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class='container'>
 
-{{outlet}}
+  <h1 class='title'>Doggie Database</h1>
+
+  {{outlet}}
+
+  {{#if isShowingModal}}
+    {{#modal-dialog close='closeModalDialog' translucentOverlay=true }}
+      {{modalMessage}}
+    {{/modal-dialog}}
+  {{/if}}
+
+
+</div>  
+

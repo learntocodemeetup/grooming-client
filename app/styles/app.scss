@@ -1,0 +1,48 @@
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+.ember-modal-dialog {
+  background-color: pink;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.ember-modal-overlay.translucent {
+  background-color: rgba(0,0,0,.8);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dog-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #FFDA98;
+  padding: 50px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.dog-title {
+}
+
+.dog-image {
+  margin-left: 50px;
+  width: 200px;
+  border-radius: 50%;
+}

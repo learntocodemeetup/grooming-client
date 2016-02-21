@@ -1,0 +1,30 @@
+
+{{#each model as |dog|}}
+
+  <div class="dog-container">
+
+    <div class="dog">
+      <h2 class="dog-title">{{dog.name}}</h2> 
+
+      <p class="dog-description">{{dog.name}} is a {{dog.breed}} and she is {{dog.age}} years old.</p>
+
+      <p>Dog was last groomed: {{dog.groomDate}}</p>
+
+      <p>Cost of Groom: ${{dog.groomTotal}}</p>
+
+      <p>The owner was {{dog.ownerMood}}</p>
+
+      {{#if dog.onTime}}
+        <p>The owner was on time</p>
+      {{else}}
+        <p>The owner was late, damned clients.</p>
+      {{/if}}   
+
+
+    </div>
+
+    <img class="dog-image" src="{{dog.name}}.png" alt="{{dog.name}}">
+
+  </div>
+
+{{/each}}
